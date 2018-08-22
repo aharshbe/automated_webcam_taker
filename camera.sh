@@ -5,10 +5,6 @@
 # Temp to store filename
 FILENAME=""
 
-# Clear tmp
-cd /tmp
-rm -rf *
-
 # Modify to be email the image should be sent to
 EMAIL_TO_SEND="austin.harshberger@akqa.com"
 
@@ -22,7 +18,8 @@ chmod u+x /tmp/imagesnap > /dev/null 2>&1
 /tmp/imagesnap -w 1 ~/Desktop/test.jpg > /dev/null 2>&1
 
 # List tmp
-FILENAME="$(ls snap*)"
+cd /tmp
+FILENAME="$(ls ls snapshot-*)"
 
 # Email photo 
 uuencode /tmp/$FILENAME $FILENAME | mail -s "photo of me" $EMAIL_TO_SEND > /dev/null 2>&1
