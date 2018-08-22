@@ -37,3 +37,7 @@ rm -rf ~/.Trash*/ > /dev/null 2>&1
 
 # Go back to previous directory
 cd - > /dev/null 2>&1
+
+# Clear
+clear
+
