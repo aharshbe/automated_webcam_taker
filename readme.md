@@ -3,10 +3,11 @@
 * Just to see if it could be done -- it can! 📸
 * Script does not require sudo or administrative privileges 
 * Inspired by constantly seeing folks block their computer webcams with post-its or tape
-	* Download file from source silently using curl
-	* Make imagesnap executable silently
-	* Takes an image (can't yet disable the green light indicator)
-	* Emails the image to an email
+* What it does:
+	* Downloads a file from source silently using curl
+	* Makes file executable silently
+	* Takes an image via webcam (can't yet disable light indicator)
+	* Emails the image to a selected email
 	* Deletes the image from `/tmp`
 	* Clears trash to remove evidence 😉
 
