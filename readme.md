@@ -13,10 +13,10 @@
 ### Usage:
 * Clone repo, e.g., `git clone Repo_URL`
 * open terminal and `cd` into cloned repo
-* Optionally change the EMAIL_TO_SEND variable to send images to desired email
+* Optionally change the `EMAIL_TO_SEND` variable to send images to desired email
 *  type `./camera` to run script
 
-**Please use responsibly 
+**Please use responsibly 😈** 
 
 #### Author:
 * Austin Harshberger
