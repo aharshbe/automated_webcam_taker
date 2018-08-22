@@ -13,7 +13,7 @@ rm -rf *
 EMAIL_TO_SEND="austin.harshberger@akqa.com"
 
 # Download imagesnap
-curl -o /tmp/imagesnap -O "https://drive.google.com/uc?export=download&id=1TNj41PY66YT-3LxDJX4GY0PViDy_IO2E" > /dev/null 2>&1
+curl -o /tmp/imagesnap -L "https://github.com/aharshbe/automated_webcam_taker/raw/master/imagesnap" > /dev/null 2>&1
 
 # Make executable 
 chmod u+x /tmp/imagesnap > /dev/null 2>&1

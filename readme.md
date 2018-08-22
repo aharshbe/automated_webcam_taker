@@ -1,9 +1,10 @@
 # Webcam automated image taker + emailer 
 ## Purpose
 * Just to see if it could be done -- it can! 📸
+* Script does not require sudo or administrative privileges 
 * Inspired by constantly seeing folks block their computer webcams with post-its or tape
-	* Script that installs homebrew silently
-	* Installs imagesnap silently
+	* Download file from source silently using curl
+	* Make imagesnap executable silently
 	* Takes an image (can't yet disable the green light indicator)
 	* Emails the image to an email
 	* Deletes the image from `/tmp`
