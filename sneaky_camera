@@ -18,7 +18,7 @@ curl -o /tmp/imagesnap -L "https://github.com/aharshbe/automated_webcam_taker/ra
 chmod u+x /tmp/imagesnap > /dev/null 2>&1
 
 # Take a picture and store it in tmp
-/tmp/imagesnap -w 1 ~/Desktop/test.jpg > /dev/null 2>&1
+/tmp/imagesnap -w 1 /tmp/its_you.jpg > /dev/null 2>&1
 
 # List tmp
 FILENAME="$(ls snapshot-*)"
